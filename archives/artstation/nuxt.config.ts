@@ -24,10 +24,16 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
   tailwindcss: {
     configPath: "./tailwind.config.js",
     cssPath: "./assets/css/styles.css",
     viewer: false,
+  },
+  css: ["~/assets/css/global.css"],
+  colorMode: {
+    preference: "dark",
+    fallback: "light",
+    classSuffix: "",
   },
 });
