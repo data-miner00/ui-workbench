@@ -1,0 +1,2 @@
+- [astro.new](https://astro.new/latest/)
+- [nuxt.new](https://nuxt.new/)
