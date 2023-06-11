@@ -2,3 +2,8 @@
   font-family: "Good Brush";
   src: url(~/assets/fonts/GoodBrush.woff) format("woff");
 }
+
+@font-face {
+  font-family: "Recoleta";
+  src: url(~/assets/fonts/Recoleta-RegularDEMO.otf) format("opentype");
+}
