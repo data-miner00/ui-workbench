@@ -1,0 +1,13 @@
+{
+  "name": "tailwind-constants",
+  "version": "1.0.0",
+  "description": "A collection of Tailwind CSS constants for CSS.",
+  "keywords": [
+    "tailwind",
+    "colors",
+    "size",
+    "css"
+  ],
+  "author": "shaun",
+  "license": "MIT"
+}
