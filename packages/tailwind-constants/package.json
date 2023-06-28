@@ -9,5 +9,8 @@
     "css"
   ],
   "author": "shaun",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
