@@ -36,4 +36,7 @@ export default defineNuxtConfig({
     fallback: "light",
     classSuffix: "",
   },
+  experimental: {
+    componentIslands: true,
+  },
 });
