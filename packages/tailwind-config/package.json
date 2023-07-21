@@ -2,14 +2,18 @@
   "name": "tailwind-config",
   "version": "1.0.0",
   "description": "A package to store Tailwind configuration files.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "tailwindcss",
     "postcss"
   ],
   "author": "shaun",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
