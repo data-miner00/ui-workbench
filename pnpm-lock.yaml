@@ -232,6 +232,9 @@ importers:
       nuxt:
         specifier: ^3.5.1
         version: 3.5.1(@types/node@18.0.0)(eslint@7.32.0)(typescript@5.0.4)
+      tailwind-config:
+        specifier: workspace:*
+        version: link:../../packages/tailwind-config
 
   archives/artstation-react:
     dependencies:
