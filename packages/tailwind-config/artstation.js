@@ -1,3 +1,5 @@
+var defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -9,7 +11,15 @@ module.exports = {
     "./locales/**/*.json",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        aktura: ["Aktura", ...defaultTheme.fontFamily.serif],
+        "instrument-serif": [
+          "Instrument Serif",
+          ...defaultTheme.fontFamily.serif,
+        ],
+      },
+    },
   },
   plugins: [],
   darkMode: "class",

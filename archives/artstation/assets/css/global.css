@@ -7,3 +7,19 @@
   font-family: "Recoleta";
   src: url(~/assets/fonts/Recoleta-RegularDEMO.otf) format("opentype");
 }
+
+@font-face {
+  font-family: "Aktura";
+  src: url(~/assets/fonts/Aktura-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url(~/assets/fonts/InstrumentSerif-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  src: url(~/assets/fonts/InstrumentSerif-Italic.ttf) format("truetype");
+}
