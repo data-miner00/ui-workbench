@@ -24,7 +24,7 @@ const links = [
         <div class="h-[40px] mx-9 text-ellipsis whitespace-nowrap">
           <a href="https://www.presslogic.ai/" target="_blank"
             ><img
-              src="https://assets.presslogic.com/static/images/logo/presslogic-logo.svg"
+              src="/images/presslogic/presslogic-logo.svg"
               alt="presslogic-logo"
           /></a>
         </div>
@@ -42,10 +42,10 @@ const links = [
           class="app-header__home-link nuxt-link-exact-active nuxt-link-active"
           title="Kdaily 韓粉日常"
           ><img
-            src="https://assets.presslogic.com/presslogic-hk-tk/static/images/layout-logo.png"
+            src="/images/presslogic/layout-logo.webp"
             srcset="
-              https://assets.presslogic.com/presslogic-hk-tk/static/images/layout-logo@2x.png 2x,
-              https://assets.presslogic.com/presslogic-hk-tk/static/images/layout-logo@3x.png 3x
+              /images/presslogic/layout-logo@2x.webp 2x,
+              /images/presslogic/layout-logo@3x.webp 3x
             "
             id="logo"
             alt="Kdaily 韓粉日常"
@@ -55,7 +55,7 @@ const links = [
           <div class="ml-auto flex items-center min-h-[32px] px-[10px]">
             <a href="/search" class="mr-4" aria-label="search"
               ><img
-                src="https://assets.presslogic.com/presslogic-hk-tk/static/images/header-icon-search.svg"
+                src="/images/presslogic/header-icon-search.svg"
                 class="header-search-link__icon"
             /></a>
             <a
@@ -64,7 +64,7 @@ const links = [
               rel="noopener noreferrer"
               class="mr-4"
               ><img
-                src="https://assets.presslogic.com/presslogic-hk-tk/static/images/header-icon-facebook.svg"
+                src="/images/presslogic/header-icon-facebook.svg"
                 alt="facebook"
                 class="top-header-nav__icon"
             /></a>
@@ -74,7 +74,7 @@ const links = [
               rel="noopener noreferrer"
               class="mr-4"
               ><img
-                src="https://assets.presslogic.com/presslogic-hk-tk/static/images/header-icon-instagram.svg"
+                src="/images/presslogic/header-icon-instagram.svg"
                 alt="instagram"
                 class="top-header-nav__icon"
             /></a>
