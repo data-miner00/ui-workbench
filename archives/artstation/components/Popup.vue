@@ -15,14 +15,24 @@ const props = defineProps({
 });
 
 const isPopupOpen = useState(() => false);
+const POPPED_LABEL = "lastpopped";
 
 onMounted(() => {
   setTimeout(() => {
-    const isPopped = localStorage.getItem("popped");
+    const poppedDate = localStorage.getItem("popped");
 
-    if (!isPopped) {
+    const now = new Date();
+
+    if (!poppedDate) {
       isPopupOpen.value = true;
-      localStorage.setItem("popped", "true");
+      localStorage.setItem(POPPED_LABEL, now.toString());
+    } else {
+      const diffDays =
+        now.getTime() - new Date(poppedDate).getTime() / (24 * 60 * 60 * 1000);
+      if (diffDays > 3) {
+        isPopupOpen.value = true;
+        localStorage.setItem(POPPED_LABEL, now.toString());
+      }
     }
   }, props.popupDelay);
 });
@@ -32,7 +42,7 @@ onMounted(() => {
   <Teleport to="body">
     <div
       v-if="isPopupOpen"
-      class="fixed top-0 left-0 bottom-0 right-0 bg-black bg-opacity-50"
+      class="fixed top-0 left-0 bottom-0 right-0 bg-black bg-opacity-50 z-10"
     >
       <div class="h-full w-full relative">
         <article
