@@ -29,6 +29,13 @@ useHead({
 </script>
 
 <template>
+  <Attribution
+    website="<div>RIOTS"
+    dark-mode
+    url="https://divriots.com"
+    description="A slick company website"
+    :inspirations="['ui', 'flickering dark mode', 'fonts']"
+  />
   <div
     class="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300"
   >

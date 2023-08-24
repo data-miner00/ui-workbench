@@ -2,6 +2,13 @@
 <script setup lang="ts"></script>
 
 <template>
+  <Attribution
+    website="Pirate King"
+    dark-mode
+    url="https://www.piratekingdom.com/"
+    description="Pirate King's personal website"
+    :inspirations="['dark mode', 'header', 'newsletter', 'accent']"
+  />
   <div class="bg-black text-white min-h-screen">
     <div class="text-center py-2 font-bold" id="banner">
       Get a <span class="uppercase underline">$1,000 Discount</span> on

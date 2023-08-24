@@ -13,6 +13,12 @@ const todo = ["make mobile responsive", "improve sidebar"];
 </script>
 
 <template>
+  <Attribution
+    website="koreanfeels"
+    url="https://koreanfeels.tumblr.com/post/20880932023/clausal-connective-%EC%96%B4%EC%84%9C%EC%95%84%EC%84%9C"
+    description="A Korean learning blog website article"
+    :inspirations="['fonts', 'minimal']"
+  />
   <div class="max-w-[860px] pt-[40px] pl-[40px]">
     <header class="mb-[60px] ml-[220px]">
       <hgroup class="font-mono">

@@ -9,7 +9,13 @@ const links = [
 </script>
 
 <template>
-  <div class="">
+  <Attribution
+    website="K-daily"
+    url="https://thekdaily.com/"
+    description="Presslogic's The K-daily news aggregator"
+    :inspirations="['header', 'accent']"
+  />
+  <div>
     <header class="bg-[#f16371] relative">
       <nav
         class="h-16 bg-white flex justify-center items-center text-[12px] leading-[16.8px] mb-[10px]"

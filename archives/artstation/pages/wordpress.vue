@@ -1,4 +1,4 @@
-<!-- https://wordpress.com/-->
+<!-- https://wordpress.com/ -->
 <script setup lang="ts">
 useHead({
   bodyAttrs: {
@@ -8,6 +8,12 @@ useHead({
 </script>
 
 <template>
+  <Attribution
+    website="Wordpress"
+    url="https://wordpress.com/"
+    description="A popular CMS for web design and hosting"
+    :inspirations="['image carousel', 'minimal']"
+  />
   <header
     class="fixed top-0 left-0 px-6 py-3 w-full flex justify-between items-center text-[#003c56] font-semibold bg-[#fdfdfd]"
   >

@@ -5,6 +5,13 @@ const TODOS = ["Highlights", "Footer"];
 </script>
 
 <template>
+  <Attribution
+    website="jvalue"
+    dark-mode
+    url="https://jvaluemall.com/"
+    description="A Japanese Mall website"
+    :inspirations="['footer', 'map aesthetics']"
+  />
   <div>
     <div class="bg-black font-serif text-center text-white py-6">
       <h2 class="text-4xl mb-2">Access</h2>
