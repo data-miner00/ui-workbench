@@ -17,8 +17,8 @@ function App() {
       title: "My showcase",
     },
     {
-      path: "/",
-      title: "Placeholder",
+      path: "/showcase2",
+      title: "New showcase",
     },
     {
       path: "/",
