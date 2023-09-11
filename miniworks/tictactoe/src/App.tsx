@@ -1,52 +1,27 @@
-import { Link } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
+import Showcase1 from "./views/Showcase1";
+import Showcase2 from "./views/Showcase2";
+import Index from "./views";
 import "./App.css";
 
-type Directory = {
-  path: string;
-  title: string;
-};
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Index />,
+  },
+  {
+    path: "/showcase1",
+    element: <Showcase1 />,
+  },
+  {
+    path: "/showcase2",
+    element: <Showcase2 />,
+  },
+]);
 
 function App() {
-  const directories: Directory[] = [
-    {
-      path: "/",
-      title: "~",
-    },
-    {
-      path: "/showcase1",
-      title: "My showcase",
-    },
-    {
-      path: "/showcase2",
-      title: "New showcase",
-    },
-    {
-      path: "/",
-      title: "Placeholder",
-    },
-    {
-      path: "/",
-      title: "Placeholder",
-    },
-    {
-      path: "/",
-      title: "Placeholder",
-    },
-  ];
-  return (
-    <div className="h-screen p-20 bg-gray-100">
-      <nav className="border border-solid border-gray-100">
-        <p className="font-bold mb-4">Directories</p>
-        <ul>
-          {directories.map((dir) => (
-            <li>
-              <Link to={dir.path}>{dir.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
