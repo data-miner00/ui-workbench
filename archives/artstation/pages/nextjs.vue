@@ -3,7 +3,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div style="text-rendering: optimizeLegibility">
+  <div class="font-inter" style="text-rendering: optimizeLegibility">
     <NextjsHeader />
   </div>
 </template>

@@ -18,6 +18,7 @@ module.exports = {
           "Instrument Serif",
           ...defaultTheme.fontFamily.serif,
         ],
+        inter: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },
   },
