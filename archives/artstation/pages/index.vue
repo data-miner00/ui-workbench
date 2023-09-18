@@ -24,6 +24,10 @@ const navLinks = [
     title: "News",
     path: "/news",
   },
+  {
+    title: "Next.js",
+    path: "/nextjs",
+  },
 ];
 </script>
 
