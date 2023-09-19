@@ -15,12 +15,12 @@
     <img src="public/assets/elm-vite-tailwind.png" />
   </a>
 
-  <h3 align="center">Elm Vite Template</h3>
+  <h3 align="center">Elm Hangman</h3>
 
   <p align="center">
-    Minimalistic Elm Template powered by Vite!
+    Introduction to writing Elm app - Hangman Game
     <br />
-    <a href="https://elm-vite-template.vercel.app"><strong>View Demo »</strong></a>
+    <a href="https://www.youtube.com/watch?v=BktE_8qYXqI"><strong>View Tutorial »</strong></a>
     <br />
     <br />
     <a href="https://github.com/data-miner00/elm-vite-template">Explore the docs</a>

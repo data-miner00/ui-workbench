@@ -1,71 +1,168 @@
 module Main exposing (Model, Msg, main)
 
 import Browser
-import Html exposing (Html)
-import Html.Attributes as Attrs
+import Debug exposing (toString)
+import Html exposing (Html, button, div, span, text)
+import Html.Attributes exposing (class)
 import Html.Events exposing (onClick)
+import Http
+import Json.Decode
+import Set exposing (Set)
 
 
-main : Program () Model Msg
-main =
-    Browser.sandbox { init = init, update = update, view = view }
+
+---- Model ----
 
 
 type alias Model =
-    Int
+    { guesses : Set String
+    , gameState : GameState
+    }
 
 
-init : Model
-init =
-    0
+type GameState
+    = Loading
+    | Running String
+    | Won
+    | Lost
+    | Error String
+
+
+init : () -> ( Model, Cmd Msg )
+init _ =
+    ( { guesses = Set.empty
+      , gameState = Loading
+      }
+    , fetchWord
+    )
+
+
+fetchWord : Cmd Msg
+fetchWord =
+    Http.get
+        { url = "https://snapdragon-fox.glitch.me/word"
+        , expect = Http.expectJson NewPhrase wordDecoder
+        }
+
+
+wordDecoder : Json.Decode.Decoder String
+wordDecoder =
+    Json.Decode.field "word" Json.Decode.string
+
+
+
+---- Update ----
 
 
 type Msg
-    = Increment
-    | Decrement
+    = Guess String
+    | Restart
+    | NewPhrase (Result Http.Error String)
 
 
-update : Msg -> Model -> Model
+update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        Increment ->
-            model + 1
+        Guess letter ->
+            ( { model | guesses = Set.insert letter model.guesses }, Cmd.none )
 
-        Decrement ->
-            model - 1
+        Restart ->
+            ( { model | guesses = Set.empty, gameState = Loading }, fetchWord )
+
+        NewPhrase (Ok phrase) ->
+            ( { model | gameState = Running phrase }, Cmd.none )
+
+        NewPhrase (Err error) ->
+            ( { model | gameState = Error <| toString error }, Cmd.none )
+
+
+
+---- View ----
 
 
 view : Model -> Html Msg
 view model =
-    Html.div [ Attrs.class "h-screen flex items-center justify-center" ]
-        [ Html.div [ Attrs.class "border-gray-300 border border-dashed mx-4 md:mx-0" ]
-            [ Html.div [ Attrs.class "border-b border-dashed border-gray-300 p-4" ]
-                [ Html.p [ Attrs.class "text-lg font-serif font-medium" ]
-                    [ Html.text "Elm Vite Template" ]
-                , Html.p [ Attrs.class "" ]
-                    [ Html.text "This is a template that focuses on simplicity and performance" ]
-                ]
-            , Html.div [ Attrs.class "flex items-center" ]
-                [ Html.a
-                    [ Attrs.class "block w-24 h-24 p-4 border-r border-dashed border-gray-300 hover:bg-gray-50"
-                    , Attrs.href "https://elm-lang.org/"
-                    , Attrs.target "_blank"
-                    , Attrs.title "Visit Elm's documentation"
-                    ]
-                    [ Html.img [ Attrs.src "/assets/elm.png", Attrs.alt "Elm's logo" ] [] ]
-                , Html.div [ Attrs.class "flex p-4 items-center gap-4" ]
-                    [ Html.button
-                        [ onClick Decrement
-                        , Attrs.class "py-3 px-5 bg-pink-400 rounded text-white hover:bg-pink-400/90"
-                        ]
-                        [ Html.text "Sub" ]
-                    , Html.div [ Attrs.class "text-center" ] [ Html.text <| String.fromInt model ]
-                    , Html.button
-                        [ onClick Increment
-                        , Attrs.class "py-3 px-5 bg-indigo-400 rounded text-white hover:bg-indigo-400/90"
-                        ]
-                        [ Html.text "Add" ]
-                    ]
-                ]
+    let
+        phraseHtml =
+            case model.gameState of
+                Loading ->
+                    span [ class "p-1" ] [ text "Loading" ]
+
+                Running phrase ->
+                    phrase
+                        |> String.split ""
+                        |> List.map
+                            (\letter ->
+                                if letter == " " then
+                                    " "
+
+                                else if Set.member letter model.guesses then
+                                    letter
+
+                                else
+                                    "_"
+                            )
+                        |> List.map
+                            (\entry ->
+                                span [ class "p-1" ] [ text entry ]
+                            )
+                        |> div []
+
+                Won ->
+                    span [ class "p-1" ] [ text "Congrats!" ]
+
+                Lost ->
+                    span [ class "p-1" ] [ text "Ooops" ]
+
+                Error error ->
+                    span [ class "p-1" ] [ text error ]
+
+        failuresHtml =
+            case model.gameState of
+                Running phrase ->
+                    model.guesses
+                        |> Set.toList
+                        |> List.filter
+                            (\letter ->
+                                not <| String.contains letter phrase
+                            )
+                        |> List.map
+                            (\letter ->
+                                span [ class "p-1" ] [ text letter ]
+                            )
+                        |> div []
+
+                _ ->
+                    text ""
+
+        buttonHtml =
+            "abcdefghijklmnopqrstuvwxyz"
+                |> String.split ""
+                |> List.map
+                    (\letter ->
+                        button
+                            [ onClick <| Guess letter
+                            , class "py-2 px-5 m-1 rounded bg-sky-400"
+                            ]
+                            [ text letter ]
+                    )
+                |> div []
+    in
+    div [ class "text-[40px] text-center text-slate-800 w-3/5 mx-auto" ]
+        [ phraseHtml
+        , buttonHtml
+        , failuresHtml
+        , div []
+            [ button [ onClick Restart ] [ text "Restart" ]
             ]
         ]
+
+
+main : Program () Model Msg
+main =
+    Browser.element
+        { view = view
+        , init = init
+        , update = update
+        , subscriptions = always Sub.none
+        }
