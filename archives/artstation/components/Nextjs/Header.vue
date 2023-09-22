@@ -19,7 +19,7 @@ const links = [
         <a
           v-for="(link, index) of links"
           :key="index"
-          class="transition-colors duration-150 text-[#666] rounded-[2px] text-sm relative first-of-type:ml-5"
+          class="transition-colors duration-150 text-[#666] rounded-[2px] text-sm relative first-of-type:ml-5 hidden lg:block"
         >
           {{ link }}
           <svg
@@ -37,7 +37,7 @@ const links = [
           </svg>
         </a>
       </div>
-      <div class="flex items-center gap-3">
+      <div class="lg:flex items-center gap-3 hidden">
         <button
           class="w-[251px] h-8 rounded-[6px] pr-[6px] pl-2 whitespace-nowrap text-sm transition-colors duration-150 flex items-center justify-between text-[rgb(143,143,143)] bg-[rgb(242,242,242)]"
           type="button"
@@ -77,6 +77,38 @@ const links = [
             >Learn</span
           >
         </a>
+      </div>
+      <div class="flex lg:hidden items-center">
+        <button class="w-9 flex items-center justify-center" type="button">
+          <svg
+            class="with-icon_icon__MHUeb"
+            data-testid="geist-icon"
+            fill="none"
+            height="24"
+            shape-rendering="geometricPrecision"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            width="24"
+            style="color: currentColor"
+          >
+            <path
+              d="M11 17.25a6.25 6.25 0 110-12.5 6.25 6.25 0 010 12.5z"
+            ></path>
+            <path d="M16 16l4.5 4.5"></path>
+          </svg>
+        </button>
+        <button
+          aria-label="open menu"
+          class="flex items-center justify-center cursor-pointer h-9 w-9 -mr-[5px] ml-[5px] rounded-[7px]"
+          type="button"
+        >
+          <div
+            class="before:block before:h-[1.5px] before:w-[22px] after:transition-transform after:duration-150 after:block after:w-[22px] after:h-[1.5px] after:translate-y-1 before:bg-black after:bg-black before:transition-transform before:duration-150 before:-translate-y-1"
+          ></div>
+        </button>
       </div>
     </nav>
   </header>
