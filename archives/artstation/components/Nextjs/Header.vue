@@ -11,7 +11,7 @@ const links = [
 
 <template>
   <header
-    class="sticky top-0 flex flex-col justify-around items-center w-full z-20 px-6 h-16 backdrop-saturate-[180%] backdrop-blur-[5px] bg-[hsla(0,0%,100%,.8)] border-b border-solid border-[hsla(0,0%,0%,0.05)]"
+    class="absolute top-0 flex flex-col justify-around items-center w-full z-20 px-6 h-16 backdrop-saturate-[180%] backdrop-blur-[5px] bg-[hsla(0,0%,100%,.8)] border-b border-solid border-[hsla(0,0%,0%,0.05)]"
   >
     <nav class="max-w-[1400px] w-full relative flex-1 items-center flex">
       <div class="gap-6 w-full flex items-center">
