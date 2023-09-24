@@ -28,6 +28,10 @@ const navLinks = [
     title: "Next.js",
     path: "/nextjs",
   },
+  {
+    title: "Nervos",
+    path: "/nervos",
+  },
 ];
 </script>
 
