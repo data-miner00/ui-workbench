@@ -19,6 +19,7 @@ module.exports = {
           ...defaultTheme.fontFamily.serif,
         ],
         inter: ["Inter", ...defaultTheme.fontFamily.sans],
+        articulatcf: ["ArticulatCF", ...defaultTheme.fontFamily.sans],
       },
     },
   },

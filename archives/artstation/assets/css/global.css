@@ -50,3 +50,47 @@
   font-weight: 800;
   src: url(~/assets/fonts/Inter-Bold.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "ArticulatCF";
+  src: url(~/assets/fonts/ArticulatCF-Regular.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ArticulatCF";
+  src: url(~/assets/fonts/ArticulatCF-Medium.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "ArticulatCF";
+  src: url(~/assets/fonts/ArticulatCF-SemiBold.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "ArticulatCF";
+  src: url(~/assets/fonts/ArticulatCF-Bold.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ArticulatCF";
+  src: url(~/assets/fonts/ArticulatCF-Extrabold.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: __fontArticulatCF_Fallback_389ac1;
+  src: local("Arial");
+  ascent-override: 91.58%;
+  descent-override: 25.59%;
+  line-gap-override: 0%;
+  size-adjust: 99.81%;
+}
