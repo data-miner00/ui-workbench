@@ -3,6 +3,7 @@
 
 <template>
   <div class="h-screen flex font-articulatcf">
+    <NervosHeader />
     <main class="flex-1 mt-[170px] ml-[12%]">
       <h1 class="text-[82px] leading-[87%] font-extrabold tracking-[-.025em]">
         Common<br />Knowledge<br />Base
