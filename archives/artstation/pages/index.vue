@@ -32,6 +32,10 @@ const navLinks = [
     title: "Nervos",
     path: "/nervos",
   },
+  {
+    title: "Sorting",
+    path: "/sorting",
+  },
 ];
 </script>
 
