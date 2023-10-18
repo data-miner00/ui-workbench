@@ -23,5 +23,6 @@
         flexibility, and interoperability.
       </p>
     </main>
+    <NervosMetrics />
   </div>
 </template>
