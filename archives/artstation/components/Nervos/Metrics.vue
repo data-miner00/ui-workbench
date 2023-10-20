@@ -1,9 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div
-    class="fixed bottom-0 left-0 w-full p-14 text-xs font-medium whitespace-nowrap leading-none"
-  >
+  <div class="text-xs font-medium whitespace-nowrap leading-none">
     <div class="uppercase text-sm tracking-widest relative">
       <i
         class="inline-block h-[6px] w-[6px] bg-[#5700ff] rounded-full absolute top-1/2 transform -translate-y-1/2"
