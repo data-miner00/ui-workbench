@@ -14,5 +14,8 @@
     "turbo": "^1.9.7"
   },
   "packageManager": "pnpm@7.15.0",
-  "name": "ui-workbench"
+  "name": "ui-workbench",
+  "engines": {
+    "node": "18.18.2"
+  }
 }
