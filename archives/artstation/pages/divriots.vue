@@ -43,12 +43,7 @@ useHead({
       <header
         class="absolute top-0 left-0 w-full flex items-center justify-between px-20 py-12"
       >
-        <div
-          class="text-4xl font-bold gb"
-          @click="$colorMode.preference = 'dark'"
-        >
-          XXX
-        </div>
+        <div class="text-4xl font-bold gb">XXX</div>
         <nav class="text-lg">
           <ul class="flex gap-10">
             <li>Home</li>

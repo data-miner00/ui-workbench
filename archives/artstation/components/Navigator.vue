@@ -29,6 +29,7 @@ watchEffect(() => {
   if (props.entries) {
     if (search.value === "") {
       filteredEntries.value = props.entries;
+      return;
     }
     filteredEntries.value = props.entries.filter(
       (x) => x.title.toLowerCase().search(search.value.toLowerCase()) >= 0
