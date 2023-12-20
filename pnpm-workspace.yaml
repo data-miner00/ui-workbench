@@ -4,4 +4,3 @@ packages:
   - "archives/*"
   - "sandboxes/*"
   - "miniworks/*"
-  - "storybooks/*"
