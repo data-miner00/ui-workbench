@@ -40,6 +40,10 @@ const navLinks = [
     title: "Hasura",
     path: "/hasura",
   },
+  {
+    title: "Gackt",
+    path: "/gackt",
+  },
 ];
 </script>
 
