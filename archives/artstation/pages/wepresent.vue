@@ -1,7 +1,33 @@
 <!-- Adapted from: https://wepresent.wetransfer.com/ -->
+<script setup lang="ts">
+const lastScrollTop = ref(0);
+const headerHidden = ref(false);
+const styleObject = computed(() => ({
+  transform: `translate(0,${headerHidden.value ? "-100%" : "0"})`,
+}));
+
+onMounted(() => {
+  window.addEventListener("scroll", () => {
+    const isScrollingDown = window.scrollY - lastScrollTop.value > 0;
+
+    if (isScrollingDown && !headerHidden.value) {
+      headerHidden.value = true;
+    } else if (!isScrollingDown && headerHidden.value) {
+      headerHidden.value = false;
+    }
+
+    lastScrollTop.value = window.scrollY < 0 ? 0 : window.scrollY;
+  });
+});
+</script>
+
 <template>
   <div class="bg-[#f0f0f0] relative">
-    <WepresentHeader class="absolute top-0 left-0 w-full z-20" />
+    <WepresentHeader
+      class="top-0 left-0 w-full z-20 transform transition-transform duration-300 fixed"
+      :style="styleObject"
+    />
+
     <section class="bg-white rounded-br-3xl rounded-bl-3xl pb-24 mx-5">
       <div
         class="rounded-br-3xl rounded-bl-3xl overflow-hidden h-[calc(100dvh-40px)] relative"
