@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@vueuse/nuxt"],
   tailwindcss: {
     configPath: "./tailwind.config.js",
     cssPath: "./assets/css/styles.css",
@@ -39,4 +39,5 @@ export default defineNuxtConfig({
   experimental: {
     componentIslands: true,
   },
+  devtools: { enabled: false },
 });
