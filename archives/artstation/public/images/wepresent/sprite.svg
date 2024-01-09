@@ -1,0 +1,265 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+  >
+    <defs>
+      <style>
+        .sprite-symbol-usage {
+          display: none;
+        }
+        .sprite-symbol-usage:target {
+          display: inline;
+        }
+      </style>
+      <symbol viewBox="0 0 6 6" id="add">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2.5 3.5V6h1V3.5H6v-1H3.5V0h-1v2.5H0v1h2.5Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 10 8" id="added">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M3.264 7.264 2.91 6.91 1.103 5.103 0 4l.707-.707L1.81 4.395 3.264 5.85 9.083.03l.707.707L3.617 6.91l-.353.354Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 12 12" id="anchor-link">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2.15 9.736a2.455 2.455 0 0 1 0-3.472l1.492-1.492-.707-.707-1.492 1.492a3.455 3.455 0 1 0 4.885 4.886L7.82 8.95l-.707-.707-1.492 1.493a2.455 2.455 0 0 1-3.471 0Zm2.686-6.158 1.492-1.492A2.455 2.455 0 1 1 9.8 5.557L8.307 7.05l.707.707 1.493-1.493A3.455 3.455 0 0 0 5.62 1.38L4.13 2.87l.707.707ZM3.82 8.771l5.014-5.014-.707-.707-5.014 5.014.707.707Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 14 8" id="arrow-down">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M7 8 0 .702.673 0 7 6.596 13.327 0 14 .702 7 8Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 8 14" id="arrow-left">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="m0 7 7.298-7L8 .673 1.404 7 8 13.327 7.298 14 0 7Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 8 14" id="arrow-right">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M8 7 .702 14 0 13.327 6.596 7 0 .673.702 0 8 7Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 14 8" id="arrow-up">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="m7 0 7 7.298-.673.702L7 1.404.673 8 0 7.298 7 0Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 15 10" id="audio">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M11.545 9.496a.248.248 0 0 0 .232-.16c1.004-2.652 1-4.76.29-6.324A.23.23 0 0 1 12.062 3C12.008 2.866 10.808.004 7.146 0c-3.66-.004-4.86 2.864-4.916 3a.269.269 0 0 1-.005.012c-.709 1.565-.713 3.672.29 6.324.037.096.13.16.232.16h.532c.179 0 .3-.183.234-.35C2.505 6.574 2.56 4.693 3.14 3.42c.7-1.542 2.245-2.312 4.007-2.381 1.762.07 3.307.84 4.008 2.38.579 1.273.634 3.154-.375 5.728a.255.255 0 0 0 .234.349h.532Zm-9.85 0a.25.25 0 0 0 .234-.338L.952 6.554a.25.25 0 0 0-.322-.146l-.468.175a.25.25 0 0 0-.146.322l.91 2.428a.25.25 0 0 0 .235.163h.534Zm12.03-3.088a.25.25 0 0 0-.322.146l-.977 2.604a.25.25 0 0 0 .234.338h.534a.25.25 0 0 0 .234-.163l.911-2.428a.25.25 0 0 0-.146-.322l-.468-.175Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 12 14" id="bookmark-active">
+        <path
+          d="M12 14V.25a.25.25 0 0 0-.25-.25H.25A.25.25 0 0 0 0 .25V14l6-4.2 6 4.2Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 12 14" id="bookmark-inactive">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="m6 9.8 6 4.2V.25a.25.25 0 0 0-.25-.25H.25A.25.25 0 0 0 0 .25V14l6-4.2Zm-5 2.28 5-3.5 5 3.5V1H1v11.08Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 8 8" id="close">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M4.071 4.707 7.253 7.89l.707-.707L4.778 4 7.96.818 7.253.111 4.071 3.293.89.11.182.818 3.364 4 .182 7.182l.707.707 3.182-3.182Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 8 5" id="closed">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="m.646 1.354.708-.708L4 3.293 6.646.646l.708.708L4 4.707.646 1.354Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 12 10" id="filter">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1.5 4.585V0h1v4.585a1.5 1.5 0 0 1 0 2.83V10h-1V7.415a1.5 1.5 0 0 1 0-2.83Zm5-3V0h-1v1.585a1.5 1.5 0 0 0 0 2.83V10h1V4.415a1.5 1.5 0 0 0 0-2.83Zm4 4V0h-1v5.585a1.5 1.5 0 0 0 0 2.83V10h1V8.415a1.5 1.5 0 0 0 0-2.83Zm-4-2.583a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM2.5 6a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm7.53 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 12 12" id="fullscreen">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1 .5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 1 0V1.5H4a.5.5 0 0 0 0-1H1Zm10.5.5a.5.5 0 0 0-.5-.5H8a.5.5 0 0 0 0 1h2.5V4a.5.5 0 0 0 1 0V1Zm0 10a.5.5 0 0 1-.5.5H8a.5.5 0 0 1 0-1h2.5V8a.5.5 0 0 1 1 0v3Zm-11 0a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1H1.5V8a.5.5 0 0 0-1 0v3Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 10 10" id="loading">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M8.5 5A3.5 3.5 0 0 0 5 1.5v-1A4.5 4.5 0 1 1 .5 5h1a3.5 3.5 0 1 0 7 0Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 12 13" id="mode">
+        <path
+          d="m5.993 11.027-4.76-3.701a.25.25 0 0 0-.306 0l-.673.523a.25.25 0 0 0 0 .395l5.593 4.35c.09.07.216.07.306 0l5.593-4.35a.25.25 0 0 0 0-.395l-.68-.53a.25.25 0 0 0-.306 0l-4.767 3.708Zm-.147-1.813c.09.07.217.07.307 0l4.754-3.7.838-.65a.25.25 0 0 0 0-.395L6.154.119a.25.25 0 0 0-.306 0L.253 4.47a.25.25 0 0 0 0 .395l.834.65 4.76 3.7Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 8 5" id="opened">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="m7.354 3.646-.708.708L4 1.707 1.354 4.354l-.708-.708L4 .293l3.354 3.353Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 8 10" id="pause">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2.5.5h-2v9h2v-9Zm5 0h-2v9h2v-9Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 8 10" id="play">
+        <path
+          d="M1 9.549V.45A.25.25 0 0 1 1.383.24L8.66 4.788a.25.25 0 0 1 0 .424L1.383 9.761A.25.25 0 0 1 1 9.549Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 12 14" id="playing">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M7.5 1a.5.5 0 0 0-1 0v12a.5.5 0 0 0 1 0V1Zm-4 2a.5.5 0 0 0-1 0v8a.5.5 0 0 0 1 0V3Zm1.5.5a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5ZM1.5 5a.5.5 0 0 0-1 0v4.5a.5.5 0 0 0 1 0V5Zm10 0a.5.5 0 0 0-1 0v4.5a.5.5 0 0 0 1 0V5ZM9 2.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V3a.5.5 0 0 1 .5-.5Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 6 6" id="plus">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2.5 3.5V6h1V3.5H6v-1H3.5V0h-1v2.5H0v1h2.5Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 14 11" id="reel">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1 7V1h9v6H1ZM0 .25A.25.25 0 0 1 .25 0h10.5a.25.25 0 0 1 .25.25V3h2.75a.25.25 0 0 1 .25.25v7.5a.25.25 0 0 1-.25.25H3.25a.25.25 0 0 1-.25-.25V8H.25A.25.25 0 0 1 0 7.75V.25ZM4 8v2h9V4h-2v3.75a.25.25 0 0 1-.25.25H4Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 11 12" id="register">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M3.5 0v1h4V0h1v1H9a2 2 0 0 1 2 2v3h-1V5H1v5a1 1 0 0 0 1 1h3v1H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h.5V0h1ZM8 7v2H6v1h2v2h1v-2h2V9H9V7H8Zm2-3H1V3a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v1Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 6 6" id="remove">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="m3 3.707 1.768 1.768.707-.707L3.707 3l1.768-1.768-.707-.707L3 2.293 1.232.525l-.707.707L2.293 3 .525 4.768l.707.707L3 3.707Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 10 11" id="search">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M8 4.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-.979 3.728a4.5 4.5 0 1 1 .763-.651l2.07 2.07-.708.707-2.125-2.126Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 10 10" id="share">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M8.5 0a1.5 1.5 0 1 1-1.195 2.407l-4.362 2.18a1.501 1.501 0 0 1 0 .825l4.362 2.181A1.5 1.5 0 1 1 7 8.56l-4.65-2.324a1.5 1.5 0 1 1 0-2.47l4.65-2.325A1.5 1.5 0 0 1 8.5 0Z"
+        />
+      </symbol>
+      <symbol viewBox="0 0 13 11" id="split-view">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1 10V1h5v9H1Zm6 0h5V1H7v9ZM0 .25A.25.25 0 0 1 .25 0h12.5a.25.25 0 0 1 .25.25v10.5a.25.25 0 0 1-.25.25H.25a.25.25 0 0 1-.25-.25V.25Z"
+        />
+      </symbol>
+    </defs>
+    <use id="add-usage" xlink:href="#add" class="sprite-symbol-usage" />
+    <use id="added-usage" xlink:href="#added" class="sprite-symbol-usage" />
+    <use
+      id="anchor-link-usage"
+      xlink:href="#anchor-link"
+      class="sprite-symbol-usage"
+    />
+    <use
+      id="arrow-down-usage"
+      xlink:href="#arrow-down"
+      class="sprite-symbol-usage"
+    />
+    <use
+      id="arrow-left-usage"
+      xlink:href="#arrow-left"
+      class="sprite-symbol-usage"
+    />
+    <use
+      id="arrow-right-usage"
+      xlink:href="#arrow-right"
+      class="sprite-symbol-usage"
+    />
+    <use
+      id="arrow-up-usage"
+      xlink:href="#arrow-up"
+      class="sprite-symbol-usage"
+    />
+    <use id="audio-usage" xlink:href="#audio" class="sprite-symbol-usage" />
+    <use
+      id="bookmark-active-usage"
+      xlink:href="#bookmark-active"
+      class="sprite-symbol-usage"
+    />
+    <use
+      id="bookmark-inactive-usage"
+      xlink:href="#bookmark-inactive"
+      class="sprite-symbol-usage"
+    />
+    <use id="close-usage" xlink:href="#close" class="sprite-symbol-usage" />
+    <use id="closed-usage" xlink:href="#closed" class="sprite-symbol-usage" />
+    <use id="filter-usage" xlink:href="#filter" class="sprite-symbol-usage" />
+    <use
+      id="fullscreen-usage"
+      xlink:href="#fullscreen"
+      class="sprite-symbol-usage"
+    />
+    <use id="loading-usage" xlink:href="#loading" class="sprite-symbol-usage" />
+    <use id="mode-usage" xlink:href="#mode" class="sprite-symbol-usage" />
+    <use id="opened-usage" xlink:href="#opened" class="sprite-symbol-usage" />
+    <use id="pause-usage" xlink:href="#pause" class="sprite-symbol-usage" />
+    <use id="play-usage" xlink:href="#play" class="sprite-symbol-usage" />
+    <use id="playing-usage" xlink:href="#playing" class="sprite-symbol-usage" />
+    <use id="plus-usage" xlink:href="#plus" class="sprite-symbol-usage" />
+    <use id="reel-usage" xlink:href="#reel" class="sprite-symbol-usage" />
+    <use
+      id="register-usage"
+      xlink:href="#register"
+      class="sprite-symbol-usage"
+    />
+    <use id="remove-usage" xlink:href="#remove" class="sprite-symbol-usage" />
+    <use id="search-usage" xlink:href="#search" class="sprite-symbol-usage" />
+    <use id="share-usage" xlink:href="#share" class="sprite-symbol-usage" />
+    <use
+      id="split-view-usage"
+      xlink:href="#split-view"
+      class="sprite-symbol-usage"
+    />
+  </svg>

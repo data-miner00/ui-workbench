@@ -94,3 +94,19 @@
   line-gap-override: 0%;
   size-adjust: 99.81%;
 }
+
+@font-face {
+  font-family: "ITC Clearface Std";
+  src: url(~/assets/fonts/ITC-Clearface-Std-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Fakt Pro";
+  src: url(~/assets/fonts/FaktPro-Normal.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Fakt Pro";
+  src: url(~/assets/fonts/FaktPro-Semibold.otf) format("opentype");
+  font-weight: 500;
+}

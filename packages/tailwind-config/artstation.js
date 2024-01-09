@@ -20,6 +20,8 @@ module.exports = {
         ],
         inter: ["Inter", ...defaultTheme.fontFamily.sans],
         articulatcf: ["ArticulatCF", ...defaultTheme.fontFamily.sans],
+        clearface: ["ITC Clearface Std", ...defaultTheme.fontFamily.serif],
+        faktPro: ["Fakt Pro", ...defaultTheme.fontFamily.sans],
       },
     },
   },

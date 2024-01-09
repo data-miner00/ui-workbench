@@ -44,6 +44,10 @@ const navLinks = [
     title: "Gackt",
     path: "/gackt",
   },
+  {
+    title: "WePresent",
+    path: "/wepresent",
+  },
 ];
 </script>
 
