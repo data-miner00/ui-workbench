@@ -28,9 +28,9 @@ onMounted(() => {
       :style="styleObject"
     />
 
-    <section class="bg-white rounded-br-3xl rounded-bl-3xl pb-24 mx-5">
+    <section class="bg-white rounded-br-3xl rounded-bl-3xl pb-24 mx-5 relative">
       <div
-        class="rounded-br-3xl rounded-bl-3xl overflow-hidden h-[calc(100dvh-40px)] relative"
+        class="rounded-br-3xl rounded-bl-3xl overflow-hidden h-[calc(100dvh-40px)] relative z-10"
       >
         <img
           alt="An image that looks like a photograph but is created with the use of Artificial Intelligence. The image has a 90s feel, showing a candid scene of a mother standing on a sunny, sandy beach, looking at the camera with her two young children next to her. Scattered around them are some toys in the sand."
@@ -61,7 +61,7 @@ onMounted(() => {
           src="https://images.ctfassets.net/adaoj5ok2j3t/35A6P9i2q0VUbzNgekt7Ue/e3e68226f5545136897cc72607760f01/mariamavropoulou-wepresent-cover.jpg?fm=webp&amp;w=3000&amp;q=75"
         />
       </div>
-      <div>
+      <div class="sticky bottom-24">
         <div class="mt-[100px]">
           <div
             class="grid grid-cols-[31%,1fr] px-10 w-[1200px] mx-auto justify-start gap-[42px]"
