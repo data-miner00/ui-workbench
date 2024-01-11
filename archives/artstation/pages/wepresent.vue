@@ -22,7 +22,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-[#f0f0f0] relative">
+  <div class="bg-[#f0f0f0] relative font-faktPro pb-5">
     <WepresentHeader
       class="top-0 left-0 w-full z-20 transform transition-transform duration-300 fixed"
       :style="styleObject"
@@ -119,8 +119,101 @@ onMounted(() => {
         </div>
       </div>
     </section>
-    <section class="py-24 rounded-3xl bg-white min-h-[300px] mx-5 mt-5">
-      <!-- content here -->
+    <section class="py-24 rounded-3xl bg-white min-h-[300px] mx-5 mt-5 pb-24">
+      <div class="max-w-[1200px] mx-auto grid gap-12">
+        <div class="px-10 grid gap-3">
+          <h2
+            class="max-w-[22ch] text-[36px] leading-[1.25] -tracking-[0.025em] font-clearface"
+          >
+            The Best of 2023
+          </h2>
+          <p class="text-[18px]">
+            Just a few of the best stories we've told this year
+          </p>
+        </div>
+        <div class="grid grid-cols-3 px-10 gap-[42px]">
+          <div class="col-span-2">
+            <WepresentStoryCard
+              url-path="/nothing"
+              author="Color Me Happy"
+              title="Download our coloring book made by international illustrators"
+              category="Commission"
+              img-url="https://images.ctfassets.net/adaoj5ok2j3t/2wlIvy28s86D3iXQZxS1FG/b30302d4ffbf0695977a7fa819092235/wepresent-colorme-cover.jpg?fm=webp&w=3000&q=75"
+              variant="normal"
+              color="#8DC4E1"
+              :show-category="true"
+              label="Story"
+              outline-color="black"
+              theme="blackOutline"
+            />
+          </div>
+          <div class="col-span-1">
+            <WepresentStoryCard
+              url-path="/nothing"
+              author="Jamie Sinclair"
+              title="'Hjem' follows the stories of asylum seekers settling in the UK"
+              category="Commission"
+              img-url="https://images.ctfassets.net/adaoj5ok2j3t/46WylieFAX3HGmTPiarU1Y/624a810e370fb519c916c118cc6b4a5c/jamiesinclair-wepresent-hjem8.jpg?fm=webp&w=3000&q=75"
+              variant="normal"
+              color="#8DC4E1"
+              :show-category="false"
+              label="Story"
+              outline-color="black"
+              theme="blackOutline"
+            />
+          </div>
+          <div class="col-span-3">
+            <WepresentStoryCard
+              url-path="/nothing"
+              author="Reto Sterchi"
+              title="Photos of the people impacted by the world's first atomic fallout"
+              category="Photography"
+              img-url="https://images.ctfassets.net/adaoj5ok2j3t/6C4YpGyaC3s7Wq08keLFGQ/6edf11ca3672135c36106587b2f147e7/reto-sterchi-wepresent-13.jpg?fm=webp&w=3000&q=75"
+              variant="full"
+              color="#C6A3BF"
+              :show-category="true"
+              label="Story"
+              outline-color="black"
+              theme="blackOutline"
+            />
+          </div>
+          <div class="col-span-1">
+            <WepresentStoryCard
+              url-path="/nothing"
+              author="Chorus in Rememory of Flight"
+              title="Julianknxx's cinematic archive of Black life"
+              category="Photography"
+              img-url="https://images.ctfassets.net/adaoj5ok2j3t/1YgW6O7pNIuPauUksHczOd/673f399232c9268a0cc64779d6674ea0/wepresent-julianknxx-Chorus-In-Rememory-of-Flight_DEF.jpg?fm=webp&w=3000&q=75"
+              variant="normal"
+              color="black"
+              :show-category="false"
+              label="Story"
+              outline-color="white"
+              theme="whiteOutline"
+            />
+          </div>
+          <div class="col-span-2">
+            <WepresentStoryCard
+              url-path="/nothing"
+              author="The Rice is on the Hob"
+              title="Tami Aftab and her father explore his hometown"
+              category="Commission"
+              img-url="https://images.ctfassets.net/adaoj5ok2j3t/6OS0qVQtcn2VyfkTxP9fLZ/a22d6dc46d3562c5b57f6ae1a7b39270/ta_wepresent_pakistan_014.jpg?fm=webp&w=3000&q=75"
+              variant="normal"
+              color="#E4E480"
+              :show-category="true"
+              label="Story"
+              outline-color="black"
+              theme="blackOutline"
+            />
+          </div>
+        </div>
+        <div class="mt-6 flex justify-center">
+          <WepresentCategoryButton url-path="" theme="blackBackground">
+            View all profiles
+          </WepresentCategoryButton>
+        </div>
+      </div>
     </section>
   </div>
 </template>
