@@ -48,6 +48,10 @@ const navLinks = [
     title: "WePresent",
     path: "/wepresent",
   },
+  {
+    title: "Studio UXPin",
+    path: "/studio-uxpin",
+  },
 ];
 </script>
 
