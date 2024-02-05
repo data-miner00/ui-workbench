@@ -52,6 +52,10 @@ const navLinks = [
     title: "Studio UXPin",
     path: "/studio-uxpin",
   },
+  {
+    title: "Afk",
+    path: "/afk",
+  },
 ];
 </script>
 
