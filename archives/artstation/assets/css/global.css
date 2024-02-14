@@ -110,3 +110,39 @@
   src: url(~/assets/fonts/FaktPro-Semibold.otf) format("opentype");
   font-weight: 500;
 }
+
+@font-face {
+  font-family: "Mabry pro";
+  src: url(~/assets/fonts/mabry-regular-pro.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mabry pro";
+  src: url(~/assets/fonts/mabry-italic-pro.woff2) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mabry pro";
+  src: url(~/assets/fonts/mabry-medium-pro.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mabry pro";
+  src: url(~/assets/fonts/mabry-medium-italic-pro.woff2) format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mabry pro";
+  src: url(~/assets/fonts/mabry-bold-pro.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

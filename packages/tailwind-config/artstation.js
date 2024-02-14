@@ -22,6 +22,7 @@ module.exports = {
         articulatcf: ["ArticulatCF", ...defaultTheme.fontFamily.sans],
         clearface: ["ITC Clearface Std", ...defaultTheme.fontFamily.serif],
         faktPro: ["Fakt Pro", ...defaultTheme.fontFamily.sans],
+        mabryPro: ["Mabry pro", ...defaultTheme.fontFamily.sans],
       },
     },
   },

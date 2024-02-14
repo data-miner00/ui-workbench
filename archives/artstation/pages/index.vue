@@ -56,6 +56,10 @@ const navLinks = [
     title: "Afk",
     path: "/afk",
   },
+  {
+    title: "Gumroad",
+    path: "/gumroad",
+  },
 ];
 </script>
 
