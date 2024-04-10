@@ -60,6 +60,10 @@ const navLinks = [
     title: "Gumroad",
     path: "/gumroad",
   },
+  {
+    title: "Grit",
+    path: "/grit",
+  },
 ];
 </script>
 
