@@ -24,6 +24,16 @@ module.exports = {
         faktPro: ["Fakt Pro", ...defaultTheme.fontFamily.sans],
         mabryPro: ["Mabry pro", ...defaultTheme.fontFamily.sans],
       },
+      animation: {
+        "spin-slow": "spin 1s linear infinite",
+        wiggle: "wiggle 1s ease-in-out infinite",
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-45deg)" },
+          "50%": { transform: "rotate(45deg)" },
+        },
+      },
     },
   },
   plugins: [],
