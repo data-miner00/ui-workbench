@@ -68,6 +68,10 @@ const navLinks = [
     title: "Box",
     path: "/box",
   },
+  {
+    title: "Input Style",
+    path: "/input-style",
+  },
 ];
 </script>
 
