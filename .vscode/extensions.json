@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "elmTooling.elm-ls-vscode",
+    "esbenp.prettier-vscode",
+    "Vue.volar",
+    "bradlc.vscode-tailwindcss",
+    "svelte.svelte-vscode",
+    "syler.sass-indented"
+  ]
+}
