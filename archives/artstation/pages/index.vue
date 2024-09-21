@@ -72,6 +72,10 @@ const navLinks = [
     title: "Input Style",
     path: "/input-style",
   },
+  {
+    title: "Carousel",
+    path: "/carousel",
+  },
 ];
 </script>
 
