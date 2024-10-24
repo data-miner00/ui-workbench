@@ -76,6 +76,10 @@ const navLinks = [
     title: "Carousel",
     path: "/carousel",
   },
+  {
+    title: "Blobs",
+    path: "/blobs",
+  },
 ];
 </script>
 

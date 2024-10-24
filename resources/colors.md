@@ -1,1 +1,3 @@
 - [Khroma](https://www.khroma.co/)
+- [Color Hunt](https://colorhunt.co/)
+- [coolors.co](https://coolors.co)
