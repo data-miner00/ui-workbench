@@ -80,6 +80,10 @@ const navLinks = [
     title: "Blobs",
     path: "/blobs",
   },
+  {
+    title: "Snack",
+    path: "/snack",
+  },
 ];
 </script>
 
