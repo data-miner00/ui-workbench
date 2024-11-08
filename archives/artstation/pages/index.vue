@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const navLinks = [
+import type { Entries } from "~/models/entry";
+
+const navLinks: Entries = [
   {
     title: "Playground",
     path: "/playground",
@@ -83,6 +85,10 @@ const navLinks = [
   {
     title: "Snack",
     path: "/snack",
+  },
+  {
+    title: "Marquee",
+    path: "/marquee",
   },
 ];
 </script>

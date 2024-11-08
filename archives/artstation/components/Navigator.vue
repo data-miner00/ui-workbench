@@ -1,16 +1,9 @@
 <script setup lang="ts">
+import type { Entries } from "~/models/entry";
+
 const isOpen = useState(() => false);
 const search = useState(() => "");
 const filteredEntries = useState<Entries>(() => []);
-
-type Entry = {
-  title: string;
-  path: string;
-  icon?: string;
-  img?: string;
-};
-
-type Entries = Entry[];
 
 const props = defineProps({
   entries: {
