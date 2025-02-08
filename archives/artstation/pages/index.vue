@@ -90,6 +90,10 @@ const navLinks: Entries = [
     title: "Marquee",
     path: "/marquee",
   },
+  {
+    title: "Webflow",
+    path: "/webflow",
+  },
 ];
 </script>
 
