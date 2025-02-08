@@ -203,3 +203,10 @@
   font-weight: 800;
   src: url(~/assets/fonts/Merriweather-Black.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "WF Visual Sans Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url(~/assets/fonts/WFVisualSans-RegularText.woff2) format("woff2");
+}

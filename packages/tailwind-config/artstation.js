@@ -24,6 +24,7 @@ module.exports = {
         faktPro: ["Fakt Pro", ...defaultTheme.fontFamily.sans],
         mabryPro: ["Mabry pro", ...defaultTheme.fontFamily.sans],
         merriweather: ["Merriweather", ...defaultTheme.fontFamily.serif],
+        wf: ["WF Visual Sans Text", ...defaultTheme.fontFamily.sans],
       },
       animation: {
         "spin-slow": "spin 1s linear infinite",
